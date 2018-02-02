@@ -1,0 +1,41 @@
+p {
+
+/*content - Width and Height*/
+
+	/* width: 200px;
+	height: 50px; */
+
+	width: 50%;
+	height: 25%;
+	/*this works off of the body element's size and 
+	will flex with the page as it shrinks and grows*/
+
+	
+/*Border*/
+
+	border: 2px solid blue;
+
+/*Padding*/
+
+	/*padding: 100px;*/
+
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 50px;
+
+/*Margin*/
+
+	/*margin: 100px;*/
+	/*margin-top: 500px:;*/
+
+	/*margin: 40px 10px 40px 10px;*/
+			/*top  right bottom left*/
+
+	margin: 0 auto;
+	/*sets top and bottom to 0
+	and left right to auto. also
+	you need px after the number 
+	unless its 0*/
+
+
+}

@@ -1,0 +1,53 @@
+/*Element*/
+
+li {
+
+}
+
+/*Class*/
+
+.hello {
+
+}
+
+/*ID*/
+
+#name {
+
+}
+
+/*Star*/
+
+* {
+
+}
+
+/*Descendant Selector*/
+
+li a {
+
+}
+
+
+/*Adjacent Selector*/
+
+h4 + ul {
+
+}
+
+/*Attribute Selector*/
+
+a[href="http://google.com"] {
+
+}
+
+
+input[type="checkbox"] {
+
+}
+
+/*nth of type*/
+
+ul:nth-of-type(3) {
+	
+}

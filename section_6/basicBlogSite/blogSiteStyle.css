@@ -1,0 +1,124 @@
+/*Usable fonts in regular or bold
+font-family: 'Montserrat', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Poiret One', cursive;
+*/
+
+/*Colt Steele color and font
+
+border color: #bdc3c7
+date color: #3498db
+h2 color: #2c3e50
+
+font: source sans pro*/
+
+
+body {
+	background: #011936;
+	
+}
+
+.container {
+	margin: /*5%*/ 20px auto;
+	padding: /*3%*/ 20px;
+	max-width: /*75%*/ 700px;
+	width: 75%;
+	background: #F4FFFD;
+	border: 20px solid #bdc3c7;
+
+}
+
+nav {
+	background: #F4FFFC;
+	
+}
+
+.navFloatTitle{
+	float: left;
+	width: 55%;
+	margin-right: 2%
+
+}
+
+.navFloatButtons {
+	float: left;
+	width: 43%;
+
+}
+
+.clearfix {
+	clear: both;
+}
+
+.navTitle {
+	color: #000000;
+	font-weight: bold;
+	
+}
+
+.navButtonsParent {
+	color: #000000;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+
+}
+
+.navButtonsChild {
+	color: #000000;
+	font-weight: bold;
+	display: inline;
+
+
+}
+
+.navButtonsChild:nth-of-type(2) {
+	color: #000000;
+	font-weight: bold;
+	display: inline;
+	border-left: 2px solid #bdc3c7;
+	border-right: 2px solid #bdc3c7;
+	padding: 2px;
+
+}
+
+hr.hrStyle {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+h2 {
+	color: #ED254E;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+
+}
+
+h1 {
+	color: #F9DC5C;
+	font-family: 'Poiret One', cursive;
+
+}
+h3 {
+	color: #000000;
+	font-family: 'Poiret One', cursive;
+
+}
+
+p {
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	text-align: justify;
+	text-justify: inter-word;
+	
+}
+
+article p:nth-of-type(1) {
+	border-left: 3px solid #465362;
+	padding: 2px;
+}

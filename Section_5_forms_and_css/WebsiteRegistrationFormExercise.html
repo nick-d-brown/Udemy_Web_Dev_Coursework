@@ -1,0 +1,118 @@
+<!-- notes:
+
+Name="" attribute is only used for behind the scenes stuff
+type="" specifies the type of input
+<div> allows -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input your Information</title>
+</head>
+<body>
+
+<h1>Register</h1>	
+
+<form>
+
+	<div>
+		<label for="firstName">First name:</label>
+		<input type="text" name="firstName" placeholder="John" required>
+		<label for="firstName">Last name:</label>
+		<input type="text" name="lastName" placeholder="Smith" required>
+	</div>
+	<div>
+		<label for="gender">Male:</label>
+		<input type="radio" name="gender" id="gender" value="male" checked>
+		<label for="gender">Female:</label>
+		<input type="radio" name="gender" id="gender" value="female">
+		<label for="gender">Other:</label>
+		<input type="radio" name="gender" id="gender" value="other">
+	</div>
+	<div>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" placeholder="bob@gmail.com" required>	
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" pattern=".{5,15}" required title="Password must be 5 to 15 characters" >  
+		 <!-- required minlength="4" maxlength="8" size="8"  <- this is a lesser preffered method of limiting characters -->
+	</div>
+	<div>
+		<label for="birthdayVerify">Birthday:</label>
+		<select name="month">
+			<option>Month</option>
+			<Option value="January">January</Option>
+			<option value="February">February</option>
+			<option value="March">March</option>
+			<option value="April">April</option>
+			<option value="May">May</option>
+			<option value="June">June</option>
+			<option value="July">July</option>
+			<option value="August">August</option>
+			<option value="September">September</option>
+			<option value="October">October</option>
+			<option value="November">November</option>
+			<option value="December">December</option>
+		</select>
+		<select name="Date">
+			<option>Date</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+		</select>	
+		<select name="year">
+			<option>Year</option>
+			<option value="2000">2000 or later</option>
+			<option value="1999">1999</option>
+			<option value="1998">1998</option>
+			<option value="1997">1997</option>
+			<option value="1996">1996</option>
+			<option value="1995">1995</option>
+			<option value="1994">1994</option>
+			<option value="1993">1993</option>
+			<option value="1992">1992</option>
+			<option value="1991">1991</option>
+			<option value="1990orEarlier">1990 or earlier</option>
+		</select>
+	</div>
+	<div>
+		<label for="termsAndCond">I agree to the terms and conditions:</label>
+		<input type="checkbox" name="termsAndCond" id="termsAndCond" required>
+	</div>
+	<div>
+		<input type="submit">
+	</div>
+</form>
+
+
+</body>
+</html>

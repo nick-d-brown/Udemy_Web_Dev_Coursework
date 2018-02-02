@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Login</title>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<!-- action - what URL to send the form data to -->
+<!-- method - what http method (get/post) -->
+
+<form action="" method="get"  >  <!-- typicallly used for a pasword request -->
+	<label>
+		Username: 
+		<input name="username" type="text" placeholder="Username" Required>
+	</label><form action="" method="get"  >  <!-- typicallly used for a pasword request -->
+	
+	<label>
+		Password: 
+		<input name="password" type="text" placeholder="Password" Required>
+	</label><form action="" method="get"  >  <!-- typicallly used for a pasword request -->
+
+	<label>
+		Email: 
+		<input name="email" type="text" placeholder="Email" Required>
+	</label>
+
+	<!-- This shows the two different ways to use a label, though the bottom may be better off in long run, as the top code is a little broken and glitchy. work on cleaning up -->
+
+	<label for="username">Username:</label>
+	<input name="username" type="username" placeholder="Username" Required>
+	<label for="password">Password:</label>
+	<input name="password" type="password" placeholder="Password" Required>
+	<label for="email">Password:</label>
+	<input name="email" type="email" placeholder="Email" Required>
+	<input type="submit">
+
+
+<!-- 	<button>Submit</button> Would ue this, but am using input to make a point -->
+</form>
+
+</body>
+</html>

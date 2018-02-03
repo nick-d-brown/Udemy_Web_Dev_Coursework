@@ -47,7 +47,6 @@ for (var i = 10; i <= 40; i++) {
     }
 }
 
-
 // Print all odd numbers between 300 and 333
 
 // my solution

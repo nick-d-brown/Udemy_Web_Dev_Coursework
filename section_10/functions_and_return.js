@@ -12,3 +12,4 @@ function capitalize(are) {
 
 var city = "paris";
 var capital = capitalize(city);
+

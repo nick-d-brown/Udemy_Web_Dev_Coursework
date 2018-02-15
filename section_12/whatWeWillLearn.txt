@@ -1,0 +1,43 @@
+Objectives for this section
+
+ -Understand objects conceptually
+ -write code using JS objects
+
+ objects
+
+ var person = {
+     name: "Cid",
+     age: 32,
+     City: "LA"
+ }
+
+ -objects don't have any built in order
+ -more usefull than arrays at organizing lists by type
+
+ --to retrieve data--
+
+ braket or dot notations
+
+ -bracket
+ console.log(person.["name"]);
+
+-when used with brakets you can lookup what a variable is equal to 
+
+///example///
+
+var str = "name";
+
+person.str // will only look for a str property in the objects
+
+person[str] // will evaluate the variable str and then look for the property that it is equal to
+
+////
+
+ -dot
+ console.log(person.name);
+ 
+ rules!!
+ cannot use dot notation if 
+ -starts with number
+ -if has a space in it
+ -

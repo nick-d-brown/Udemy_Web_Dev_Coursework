@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Methods</title>
+</head>
+<body>
+    
+<h1>JS Methods</h1>
+
+<p>Topics:</p>
+
+<ol>
+    <li>Adding methods to an object</li>
+    <li>Namespacing</li>
+    <li>The keyword <em>this</em></li>
+</ol>
+
+<script>
+var obj = {
+    name: "Chuck",
+    age: 45,
+    isCool: flase,
+    friends: ["bob", "tina"],
+    add: function (x,y) {  //addresses ol #1
+        return x + y;
+    }
+}
+
+obj.add(10,5);
+    // will return 15
+
+function speak() {
+    return "woof!";
+}
+
+function speak() {
+    return "meow";
+}
+
+// this is a name space collision where two things are named the smae thing
+// we solve this by usng objects
+
+var dogSpace = {};
+
+dogSpace.speak = function() {
+     return "woof!";
+};
+
+var catSpace = {};
+
+catSpace.speak = function() {
+     return "meow!";
+};
+
+</script>
+
+</body>
+</html>

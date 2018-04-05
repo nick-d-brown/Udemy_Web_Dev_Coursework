@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Work</title>
+</head>
+<body>
+    <h1>Check console</h1>
+
+    <h1>Hello</h1>
+    <h1>GoodBye</h1>
+    <ul>
+        <li id="highlight">1</li>
+        <li class="bolded">2</li>
+        <li class="bolded">3</li>
+        
+    </ul>
+
+<!-- The script below will show the different ways in which you can select html elements using different 
+     JavaScript methods. All of the methods below are within the document object. Some of the methods 
+     will return a node list but all will return some form of an objec, NOT the html element itself!-->
+
+<script>
+
+    var tag = document.getElementById('highlight'); // if document.dir(tag) is run will show the object that is selected
+    var tags = document.getElementsByClassName('bolded'); // Returns a node list which looks similar to array but lacks some methods
+    var tagName = document.getElementsByTagName('li');
+    var queryTag = document.querySelector('#highlight');
+    var firstH1 = document.querySelector('h1');
+    var li = document.querySelector('.bolded');
+    var lis = document.querySelectorAll('li'); // returns a node list of all li elements
+    var oneLi = document.querySelector('li'); // returns a a single li element
+
+ 
+
+</script>
+</body>
+</html>

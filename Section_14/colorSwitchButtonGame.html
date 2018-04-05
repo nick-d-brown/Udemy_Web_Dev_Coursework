@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Background Switch Button</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+<!-- from instructor -->
+<style>
+    .purple {
+        background: purple;
+    }
+    </style>
+</head>
+<body>
+    <button class="">Click Me</button>
+
+<script>
+
+// My solution (working)
+// var toggleSwitch = true;
+// var button = document.querySelector('button');
+
+// button.addEventListener('click', function(){
+//     if (toggleSwitch === true) {
+//         document.querySelector('body').style.background = "purple";
+//         toggleSwitch = false;
+//     } else {
+//         document.querySelector('body').style.background = "white";
+//         toggleSwitch = true;
+//     }
+// });
+
+
+// instructor solution
+
+// var isPurple = false;
+// var button = document.querySelector('button');
+
+// button.addEventListener('click', function(){
+//     // if white make purple
+//     if (isPurple) {
+//         document.body.style.background = "white";
+//         isPurple = false;
+//     } 
+//     // else make white
+//     else {
+//         document.body.style.background = "purple";
+//         isPurple = true;
+//     }
+// });
+
+// this is a shorter option that simply toggles a css class
+var button = document.querySelector('button');
+
+button.addEventListener('click', function(){
+    document.body.classList.toggle('purple');
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Work</title>
+<style>
+
+    .big {
+        color:red;
+        font-size: 25px;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <!-- This file deals with DOM manipulation. Specifically how to change style, add/remove class, 
+        change the content of a tag, and change its attributes  -->
+
+    <h1>title</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita harum dolore soluta asperiores 
+        cumque excepturi aut quisquam distinctio aperiam!
+    </p>
+    <img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/4030203227/original/responsive-testing.png?1472718295" alt="">
+    <img src="http://www.redefiningrealty.com/userfiles/images/downhousing-your-home.jpg" alt="">
+
+    <p>
+        This is an <strong>awesome</strong> paragraph.
+    </p>
+
+    <p><a href="google.com">link to google</a></p>
+
+    <ul>
+        <li>orchids</li>
+        <li>suculaents</li>
+        <li>tulips</li>
+    </ul>
+
+
+    <script>
+
+        //  Style property used to manipulate an element's CSS
+        // property.style.   -->color, border .....
+
+        // using inline style changes
+        var elem1 = document.querySelector('h1');
+        elem1.style.color = 'yellow'; 
+
+        // Using classlist method
+        var p = document.querySelector('p');
+        p.classList.add('big');
+
+        // Using 
+        var p2 = document.getElementsByTagName('p')[0];
+        console.log(p.textContent); // Will return "This is an <strong>awesome</strong> paragraph." before 
+                                    //  any manipulation is done
+
+        var ul = document.querySelector("ul");
+
+        console.log(p2.innerHTML); //before any manipulation is done will return
+                                // <p>This is an < strong > awesome</strong > paragraph.</p>
+
+        p.innerHTML = "<p>This is <strong>VERY AWESOME</strong></p>";
+        // p.textContent = "<p>This is <strong>VERY AWESOME</strong></p>"; DONT DO THIS - it will treat it as text and not render html
+        elem1.textContent = "End of the show";
+
+        // Attribute Manipulation
+
+        var img1 = document.getElementsByTagName('img')[0];
+        console.log(img1);
+        
+        img1.setAttribute('src', 'https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&h=350');
+
+        var a = document.querySelector("a");
+        a.setAttribute('href', 'http://www.bing.com')
+        a.textContent = "link to bings"
+         
+        
+
+
+    </script>
+</body>
+
+</html>

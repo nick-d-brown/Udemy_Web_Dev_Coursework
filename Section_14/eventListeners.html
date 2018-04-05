@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Work</title>
+    <style>
+        .big {
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- This file deals with DOM manipulation. Specifically how to change style, add/remove class, 
+        change the content of a tag, and change its attributes  -->
+
+    <h1>title</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita harum dolore soluta asperiores cumque excepturi aut
+        quisquam distinctio aperiam!
+    </p>
+    <img src="https://img.huffingtonpost.com/asset/5ab4d4ac2000007d06eb2c56.jpeg?cache=sih0jwle4e&ops=336_189,quality_75" alt="">
+    <img src="https://i.ytimg.com/vi/rziIg5V1RdA/maxresdefault.jpg" alt="">
+
+    <p>
+        This is an
+        <strong>awesome</strong> paragraph.
+    </p>
+
+    <p>
+        <a href="google.com">link to google</a>
+    </p>
+
+    <ul>
+        <li>orchids</li>
+        <li>suculaents</li>
+        <li>tulips</li>
+    </ul>
+
+
+    <script>
+
+        var h1= document.querySelector('h1');
+        h1.addEventListener('click', function(){
+            h1.style.background= 'orange';
+        });
+
+        var ul = document.querySelector('ul');
+        ul.addEventListener('click', function() {
+            console.log(5);
+            
+        });
+
+        var lis = document.querySelectorAll('li');
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].addEventListener("click", function(){
+                this.style.color = 'pink';
+            })
+        }
+
+   
+
+
+    </script>
+</body>
+
+</html>

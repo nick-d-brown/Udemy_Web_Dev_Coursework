@@ -1,0 +1,12 @@
+Intro to the DOM
+
+Objectives 
+-Define what the DOM is
+-Understand why DOM Maniulation is awesom
+-List a few examples of sites that use JS to manipulate the DOM
+-Understand the SELECT, then MANIPULATE workflow
+
+what is DOM
+
+-Document Object Model
+it is the interface between your javascript and html/css

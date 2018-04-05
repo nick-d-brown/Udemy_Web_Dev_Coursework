@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Methods</title>
+<!-- DONT DO THIS IN REGULAR DOCUMENT -->
+<style>
+
+    .correct {
+        color: green;
+    }
+
+    .wrong  {
+        color: red;
+        background-color: purple;
+    }
+
+    
+</style>
+
+</head>
+<body>
+    
+
+    <h1>jQuery Methods Demo PAge</h1>
+
+    <input type="text" placeholder="name">
+
+    <ul>
+        <li>Skittles</li>
+        <li>Snickers</li>
+        <li>Starburst</li>
+    </ul>
+
+    <img src="https://www.forestholidays.co.uk/~/media/images/content%20block%20images/slideshow%20images/themes/wildlife/pine-marten-closeup.ashx?la=en" alt="pine marten">
+    <img src="https://www.forestholidays.co.uk/~/media/images/content%20block%20images/slideshow%20images/themes/wildlife/pine-marten-closeup.ashx?la=en" alt="pine marten">
+    <img src="https://www.forestholidays.co.uk/~/media/images/content%20block%20images/slideshow%20images/themes/wildlife/pine-marten-closeup.ashx?la=en" alt="pine marten">
+
+
+    <select name="" id="">
+        <option value="Toad">Toad</option>
+        <option value="Ostrich">Ostrich</option>
+        <option value="Dog">Dog</option>
+    </select>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+
+    <!-- DONT DO THIS IN AN ACTUAL DOCUMENT VERY BAD PRACTICE -->
+    <script>
+    
+    // .text changes the text in an html element
+    $("h1").text("New Text!!!!");
+    // $("ul").text();
+    $("li").text("Simba, Marley, Chewie");
+    
+    //.html changes the actual html of an element that is selected
+    $("ul").html("<li>I h@ck3d ur UL</li>")
+    
+    // attr changes the attributes
+    $("img").css("width", "200px");
+    $("img").attr("src", "https://southcoastherald.co.za/wp-content/uploads/sites/52/2018/03/PineMarten_52655.jpg");
+    $("img").last().attr("alt", "its a thing"); // seects the last one
+
+    // .val() selects the value of a selected element
+    $("input").val(); // returns an empty string if there is nothing inside of the input box
+    $("input").val("updated value"); // updates the value in the input box to what was put in here 
+    $("input").val(""); // same thing goes if it is an empty string
+
+    // .val() works on anything with a value associated
+    $("input").val(""); // same thing goes if it is an empty string
+
+
+    // add class
+    $("h1").addClass("correct");
+
+    // toggle class
+    $("li").toggleClass("wrong");
+
+    </script>
+</body>
+</html>

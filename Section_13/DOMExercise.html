@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Work</title>
+</head>
+
+<body>
+
+    <!-- use 4 different ways to select the elements in the html -->
+
+    <h1>I am an h1!</h1>
+    <p id="first" class="special">Hello</p>
+    <p class="special">Goodbye!</p>
+    <p>Hi Again!</p>
+    <p class="special">Hello</p>
+    <p id="last">GoodBye again!</p>
+
+    <script>
+
+    var firstWay = document.getElementById('first');
+    var secondWay = document.getElementsByClassName('special');
+    var thirdWay = document.getElementsByTagName('p');
+    var fourthWay = document.querySelector('#last');
+    
+
+    console.log(firstWay,secondWay,thirdWay,fourthWay);
+    
+    // Other options
+
+    var fifthWay = document.querySelectorAll('p')[0]; // Returns just the first paragraph tag
+    var sixthWay = document.querySelector('h1 + p'); // Uses more complex CSS selectors to get the element
+
+    </script>
+</body>
+
+</html>

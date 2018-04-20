@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>keypress</title>
+</head>
+<!-- NOTE  -->
+<!--  Key Press will give the CHARACTER not just the number that is pressed -->
+<!-- Key up and Key down do what youd think but return a number that is pressed -->
+
+<body>
+    <h1>jQuery Events</h1>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+
+    <input type="text" name="" id="">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+    $("h1").on("click", function () {
+        $(this).css("color", "purple");
+    });
+
+    $("input").on("keypress", function () {
+        console.log("keypressed");
+        
+    });
+
+    $("button").on("mouseenter", function () {
+        $(this).css("fontWeight", "bold");
+        
+    });
+
+    $("button").on("mouseleave", function () {
+        $(this).css("fontWeight", "normal");
+        
+    });
+
+    </script>
+</body>
+
+</html>

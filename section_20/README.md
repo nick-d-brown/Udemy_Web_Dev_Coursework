@@ -1,0 +1,1 @@
+This section covers the basics of the backend. There is no true code written.Mainly setup for Cloud9 and beginning to understand GET vs POST.

@@ -1,0 +1,7 @@
+ <% and %> is only used for control logic that is not displayed on the page. RENDERS TO THE HTML
+ <%=  and %>  used for evaluation (i.e. 5+5) used to display something to the html. DOES NOT RENDER TO THE HETML
+
+
+PARTIALS
+
+--file templates that we can include as a boiler plate that is used for every single page

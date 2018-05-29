@@ -1,0 +1,36 @@
+<% include partials/header %>
+
+
+
+<!-- jumbotron -->
+    <div class="container">
+        <header class="jumbotron">
+            <div class="containter">
+                <h1>Welcome to the SummitPost CopyCat!</h1>
+                <p>The one-stop shop for mountain info</p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="/summits/new">Add a new Summit</a>
+                </p>
+            </div>
+        </header>
+
+        <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+            <% summits.forEach(function(summit){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img src="<%= summit.image %>" alt="">
+                    <div class="caption">
+                        <h4>
+                            <%= summit.name %>
+                        </h4>
+                    </div>
+                    <a href="/summits/<%= summit._id %>" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+        
+    </div>
+
+
+<% include partials/footer %>

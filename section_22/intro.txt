@@ -1,0 +1,9 @@
+intro to node
+
+-- what is intro
+
+A way for us to write JS on the server side of the stack. A backend language that utilizes JS.
+
+-- why learn it?
+
+Its popular. high performance and uses JavaScript. 
